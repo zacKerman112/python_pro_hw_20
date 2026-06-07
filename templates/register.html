@@ -1,0 +1,5 @@
+<h2>Реєстрація</h2>
+<form method="post">
+    {% csrf_token %} {{ form.as_p }}  <button type="submit">Зареєструватись</button>
+</form>
+<p>Вже є акаунт? <a href="{% url 'login' %}">Увійти</a></p>
